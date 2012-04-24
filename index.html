@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mcollective-docs by KristianOellegaard</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mcollective-docs</h1>
+        <p>The docs I could not find for Marionette Collective</p>
+        <p class="view"><a href="https://github.com/KristianOellegaard/mcollective-docs">View the Project on GitHub <small>KristianOellegaard/mcollective-docs</small></a></p>
+        <ul>
+          <li><a href="https://github.com/KristianOellegaard/mcollective-docs/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/KristianOellegaard/mcollective-docs/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/KristianOellegaard/mcollective-docs">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>mcollective-docs</h1>
+
+<p>The docs I could not find for Marionette Collective</p>
+
+<h1>Getting the thing installed</h1>
+
+<p>You need three things:</p>
+
+<ul>
+<li>
+<strong>Middleware</strong> - A queue (ActiveMQ or RabbitMQ both works!)</li>
+<li>
+<strong>Servers</strong> Any number of servers listening to that queue</li>
+<li>
+<strong>Client</strong> A client to send commands with</li>
+</ul><h2>Ubuntu middleware/server/client</h2>
+
+<p>Packages needed:</p>
+
+<ul>
+<li>Middleware <code>mcollective-middleware</code>
+</li>
+<li>Regular servers <code>mcollective-server</code>
+</li>
+<li>Client pc's: <code>mcollective-client</code>
+</li>
+</ul><p>Go to every server and install the above packages. </p>
+
+<p>On clients, edit /etc/mcollective/client.cfg and on servers edit /etc/mcollective/server.cfg. Start by editing the server.cfg on the <em>middleware</em> server and adjust security settings. Then use this server.cfg as a template for the others.</p>
+
+<h2>Mac OS X client</h2>
+
+<p>Just want it to work? Run this (without sudo! We will ask for password when needed):</p>
+
+<p><strong>Caution: We assume you are not using RVM or other gem managers, so we install "stomp" system-wide</strong></p>
+
+<p><code>curl -L https://raw.github.com/KristianOellegaard/mcollective-docs/master/install-scripts/osx/1.2.1.sh | sh</code></p>
+
+<p>This installs the current stable version (1.2.1) on your mac.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/KristianOellegaard">KristianOellegaard</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
