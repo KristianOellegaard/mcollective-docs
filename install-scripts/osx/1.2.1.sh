@@ -1,8 +1,8 @@
 #/bin/sh
 pushd .
 sudo gem install stomp
-mkdir -p ~/.mcollective-client/1.2.1/
-cd ~/.mcollective-client/1.2.1/
+mkdir -p ~/.mcollective-client/
+cd ~/.mcollective-client/
 curl -O http://downloads.puppetlabs.com/mcollective/mcollective-1.2.1.tgz
 tar -xvzf mcollective-1.2.1.tgz
 cd mcollective-1.2.1
