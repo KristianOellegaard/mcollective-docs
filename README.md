@@ -35,3 +35,8 @@ Just want it to work? Run this (without sudo! We will ask for password when need
 ``curl -L https://raw.github.com/KristianOellegaard/mcollective-docs/master/install-scripts/osx/1.2.1.sh | sh``
 
 This installs the current stable version (1.2.1) on your mac.
+
+Thanks to
+=========
+
+The guys at IRC for helping me find the above solutions, in specific R.I. Pienaar.
