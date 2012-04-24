@@ -2,3 +2,36 @@ mcollective-docs
 ================
 
 The docs I could not find for Marionette Collective
+
+Getting the thing installed
+===========================
+
+You need two things:
+
+- **Middleware** - A queue (ActiveMQ or RabbitMQ both works!)
+- **Servers** Any number of servers listening to that queue
+- **Client** A client to send commands with
+
+
+Ubuntu
+------
+
+Packages needed:
+- Middleware ``mcollective-middleware``
+- Regular servers ``mcollective-server``
+- Client pc's: ``mcollective-client``
+
+Go to every server and install the above packages. 
+
+On clients, edit /etc/mcollective/client.cfg and on servers edit /etc/mcollective/server.cfg. Start by editing the server.cfg on the *middleware* server and adjust security settings. Then use this server.cfg as a template for the others.
+
+Mac OS X
+--------
+
+Just want it to work? Run this (without sudo! We will ask for password when needed):
+
+  **Caution: We assume you are not using RVM or other gem managers, so we install "stomp" system-wide**
+
+``curl -L https://raw.github.com/KristianOellegaard/mcollective-docs/master/install-scripts/osx/1.2.1.sh | sh``
+
+This installs the current stable version (1.2.1) on your mac.
