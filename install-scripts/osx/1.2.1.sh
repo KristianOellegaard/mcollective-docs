@@ -19,5 +19,5 @@ echo "Please add the following to the bottom of your .bashrc/.zshrc"
 echo "export PATH=\$PATH:$PWD"
 echo "export RUBYLIB=\$RUBYLIB:$PWD/lib"
 echo "and open ~/.mcollective and adjust the server settings and change:"
-echo "libdir = $PWD/lib"
+echo "libdir = $PWD/plugins/"
 popd
