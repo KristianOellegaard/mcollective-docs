@@ -6,15 +6,15 @@ The docs I could not find for Marionette Collective
 Getting the thing installed
 ===========================
 
-You need two things:
+You need three things:
 
 - **Middleware** - A queue (ActiveMQ or RabbitMQ both works!)
 - **Servers** Any number of servers listening to that queue
 - **Client** A client to send commands with
 
 
-Ubuntu
-------
+Ubuntu middleware/server/client
+-------------------------------
 
 Packages needed:
 - Middleware ``mcollective-middleware``
@@ -25,8 +25,8 @@ Go to every server and install the above packages.
 
 On clients, edit /etc/mcollective/client.cfg and on servers edit /etc/mcollective/server.cfg. Start by editing the server.cfg on the *middleware* server and adjust security settings. Then use this server.cfg as a template for the others.
 
-Mac OS X
---------
+Mac OS X client
+---------------
 
 Just want it to work? Run this (without sudo! We will ask for password when needed):
 
