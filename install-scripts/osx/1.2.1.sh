@@ -1,6 +1,11 @@
 #/bin/sh
 pushd .
-sudo gem install stomp
+if gem list | grep -q stomp; then
+  echo "Stomp already installed, skipping."
+else
+  echo "Installing stomp using Ruby Gems globally."
+  sudo gem install stomp
+fi
 mkdir -p ~/.mcollective-client/
 cd ~/.mcollective-client/
 curl -O http://downloads.puppetlabs.com/mcollective/mcollective-1.2.1.tgz
