@@ -25,7 +25,7 @@ Go to every server and install the above packages.
 
 On clients, edit /etc/mcollective/client.cfg and on servers edit /etc/mcollective/server.cfg. Start by editing the server.cfg on the *middleware* server and adjust security settings. Then use this server.cfg as a template for the others.
 
-**Caution: There is a bug in the init script for debian/ubuntu, you have to replace it: http://projects.puppetlabs.com/issues/13043**
+**Caution: There is a bug in the init script for debian, you have to replace it: http://projects.puppetlabs.com/issues/13043**
 
 Mac OS X client
 ---------------
